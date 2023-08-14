@@ -22,6 +22,7 @@ Before starting the container you need to have two directories:
 ```bash
 docker run -it -v $(pwd)/in:/usr/local/in -v $(pwd)/out:/usr/local/out docker-brotli /usr/bin/compress.sh
 ```
+
 Instead of `in` and `out` you can specify custom input and output directories.
 
 ## Bugs
