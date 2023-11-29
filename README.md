@@ -22,6 +22,7 @@ Before starting the container you need to have two directories:
 ```bash
 docker run -it -v $(pwd)/in:/usr/local/in -v $(pwd)/out:/usr/local/out docker-brotli /usr/bin/compress.sh
 ```
+Or you can use the precompiled image on dockerhub (heyjoflyer/brotli-docker):
 ```bash
 docker pull brotli-docker:latest
 docker run -it -v $(pwd)/in:/usr/local/in -v $(pwd)/out:/usr/local/out brotli-docker /usr/bin/compress.sh
