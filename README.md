@@ -4,7 +4,7 @@ This project allows you to create a docker container which automatically compres
 
 ## Usage
 
-### Building
+### Building (optional)
 
 ```bash
 git clone https://github.com/HeyJoFlyer/brotli-docker.git
@@ -21,6 +21,10 @@ Before starting the container you need to have two directories:
 
 ```bash
 docker run -it -v $(pwd)/in:/usr/local/in -v $(pwd)/out:/usr/local/out docker-brotli /usr/bin/compress.sh
+```
+```bash
+docker pull brotli-docker:latest
+docker run -it -v $(pwd)/in:/usr/local/in -v $(pwd)/out:/usr/local/out brotli-docker /usr/bin/compress.sh
 ```
 
 Instead of `in` and `out` you can specify custom input and output directories.
